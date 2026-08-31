@@ -268,7 +268,7 @@ body {
 }
 
 .seekbar {
-  height: 4px;
+  height: 5px;
   width: 98%;
   background: white;
   border-radius: 10px;
@@ -279,8 +279,8 @@ body {
 }
 
 .circle {
-  width: 10px;
-  height: 10px;
+  width: 11px;
+  height: 11px;
   border-radius: 10px;
   background-color: white;
   position: relative;

@@ -47,7 +47,6 @@ async function getSongs(folder) {
     <img class="invert" src="img/music.svg" alt="">
                 <div class="info">
                   <div>${decodeURIComponent(song)}</div>
-                  <div>Indra</div>
                 </div>
                 <div class="playnow">
                   <span>Play Now</span>
