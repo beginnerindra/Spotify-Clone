@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #121212;
+    color: white;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+/* =========================
+   MAIN PAGE
+========================= */
+
+.signup-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+
+    background: #121212;
+
+    padding-top: 42px;
+    padding-bottom: 40px;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.signup-container {
+    width: 348px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   SPOTIFY LOGO
+========================= */
+
+.spotify-logo {
+    width: 36px;
+    height: 36px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spotify-logo svg {
+    width: 36px;
+    height: 36px;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+h1 {
+    font-size: 40px;
+    line-height: 1.05;
+
+    font-weight: 800;
+
+    letter-spacing: -1.8px;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form {
+    width: 100%;
+    text-align: left;
+}
+
+
+label {
+    display: block;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+
+input {
+    width: 100%;
+    height: 52px;
+
+    padding: 0 13px;
+
+    border: 1px solid #727272;
+    border-radius: 4px;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+input::placeholder {
+    color: #b3b3b3;
+}
+
+
+input:hover {
+    border-color: #a7a7a7;
+}
+
+
+input:focus {
+    border: 2px solid white;
+}
+
+
+/* =========================
+   NEXT BUTTON
+========================= */
+
+.next-button {
+    width: 100%;
+    height: 52px;
+
+    margin-top: 17px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #1ed760;
+
+    color: #000;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+
+.next-button:hover {
+    background: #1fdf64;
+
+    transform: scale(1.01);
+}
+
+
+.next-button:active {
+    transform: scale(0.99);
+}
+
+
+/* =========================
+   OR
+========================= */
+
+.or {
+    height: 57px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.or span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   SOCIAL BUTTONS
+========================= */
+
+.social-button {
+    position: relative;
+
+    width: 100%;
+    height: 52px;
+
+    margin-bottom: 9px;
+
+    border: 1px solid #727272;
+    border-radius: 28px;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.social-button:hover {
+    border-color: white;
+
+    background: #1b1b1b;
+}
+
+
+/* =========================
+   ICON CONTAINER
+========================= */
+
+.button-icon {
+    position: absolute;
+
+    left: 29px;
+
+    width: 23px;
+    height: 23px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================
+   PHONE ICON
+========================= */
+
+.phone-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+
+/* =========================
+   GOOGLE
+========================= */
+
+.google-icon {
+    font-size: 22px;
+
+    font-family: Arial, sans-serif;
+
+    font-weight: 700;
+
+    color: #4285f4;
+}
+
+
+/* =========================
+   APPLE
+========================= */
+
+/* .apple-icon {
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 25px;
+
+    line-height: 1;
+} */
+
+#apple-icon {
+    display: flex;
+    padding-right: 50px;
+    gap: 50px;
+}
+
+
+/* =========================
+   LOGIN SECTION
+========================= */
+
+.login-section {
+    margin-top: 64px;
+
+    text-align: center;
+}
+
+
+.login-section p {
+    color: #b3b3b3;
+
+    font-size: 16px;
+
+    margin-bottom: 17px;
+}
+
+
+.login-section a {
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.login-section a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .signup-page {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+    .signup-container {
+        width: calc(100% - 40px);
+
+        max-width: 348px;
+    }
+
+
+    h1 {
+        font-size: 34px;
+
+        margin-bottom: 35px;
+    }
+
+
+    .login-section {
+        margin-top: 50px;
+    }
+}

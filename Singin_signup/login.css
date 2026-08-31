@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #121212;
+    color: white;
+}
+
+/* Main page */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #121212;
+}
+
+/* Login container */
+
+.login-container {
+    width: 348px;
+    text-align: center;
+}
+
+/* Spotify logo */
+
+.spotify-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Heading */
+
+h1 {
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    margin-bottom: 42px;
+}
+
+/* Form */
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+input {
+    width: 100%;
+    height: 52px;
+    background: transparent;
+    border: 1px solid #727272;
+    border-radius: 4px;
+    color: white;
+    font-size: 17px;
+    padding: 0 14px;
+    outline: none;
+}
+
+input:hover {
+    border-color: #aaa;
+}
+
+input:focus {
+    border: 2px solid white;
+}
+
+/* Continue button */
+
+.continue-btn {
+    width: 100%;
+    height: 52px;
+    margin-top: 17px;
+
+    border: none;
+    border-radius: 28px;
+
+    background: #1ed760;
+    color: #000;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.continue-btn:hover {
+    background: #1fdf64;
+    transform: scale(1.01);
+}
+
+/* OR */
+
+.or {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 70px;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Login buttons */
+
+.login-btn {
+    position: relative;
+    width: 100%;
+    height: 52px;
+    margin-bottom: 9px;
+    border: 1px solid #727272;
+    border-radius: 28px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.login-btn:hover {
+    border-color: white;
+    background: #1a1a1a;
+}
+
+/* Icons */
+
+.icon {
+    position: absolute;
+    left: 30px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Facebook */
+
+.facebook {
+    background: #1877f2;
+    border-radius: 50%;
+
+    font-family: Arial;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+
+/* Signup */
+
+.signup {
+    margin-top: 70px;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.signup a {
+    display: block;
+    margin-top: 12px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none; 
+}
+
+.signup a:hover {
+    color: #1ed760;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   SOCIAL BUTTONS
+========================= */
+
+.social-button {
+    position: relative;
+    width: 100%;
+    height: 52px;
+    margin-bottom: 9px;
+    border: 1px solid #727272;
+    border-radius: 28px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.social-button:hover {
+    border-color: white;
+    background: #1b1b1b;
+}
+
+
+/* =========================
+   ICON CONTAINER
+========================= */
+
+.button-icon {
+    position: absolute;
+
+    left: 29px;
+
+    width: 23px;
+    height: 23px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================
+   PHONE ICON
+========================= */
+
+.phone-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+
+/* =========================
+   GOOGLE
+========================= */
+
+.google-icon {
+    font-size: 22px;
+
+    font-family: Arial, sans-serif;
+
+    font-weight: 700;
+
+    color: #4285f4;
+}
+
+
+/* =========================
+   APPLE
+========================= */
+
+/* .apple-icon {
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 25px;
+
+    line-height: 1;
+} */
+
+#apple-icon {
+    display: flex;
+    padding-right: 50px;
+    gap: 50px;
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    .login-page {
+        align-items: flex-start;
+        padding-top: 45px;
+    }
+
+    .login-container {
+        width: calc(100% - 40px);
+        max-width: 348px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 35px;
+    }
+
+    .signup {
+        margin-top: 50px;
+    }
+}

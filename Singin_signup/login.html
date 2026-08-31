@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Spotify</title>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <main class="login-page">
+
+        <div class="login-container">
+
+            <!-- Spotify Logo -->
+            <div class="spotify-logo">
+                <svg viewBox="0 0 24 24" width="34" height="34">
+                    <circle cx="12" cy="12" r="12" fill="white" />
+                    <path d="M6.5 9.2c3.7-1.1 7.8-.8 11.1.7" fill="none" stroke="#111" stroke-width="1.5"
+                        stroke-linecap="round" />
+                    <path d="M7.2 12.1c3.1-.8 6.5-.6 9.3.6" fill="none" stroke="#111" stroke-width="1.5"
+                        stroke-linecap="round" />
+                    <path d="M7.9 14.8c2.5-.5 5.1-.3 7.3.6" fill="none" stroke="#111" stroke-width="1.5"
+                        stroke-linecap="round" />
+                </svg>
+            </div>
+
+            <h1>Welcome back</h1>
+
+            <!-- Email -->
+            <form>
+                <label for="email">Email</label>
+
+                <input type="email" id="email" autocomplete="email">
+
+                <button type="submit" class="continue-btn">
+                    Continue
+                </button>
+            </form>
+
+            <div class="or">
+                <span>or</span>
+            </div>
+
+            <!-- Login buttons -->
+
+            <!-- <button class="login-btn">
+                <span class="icon phone">▯</span>
+                <span>Continue with phone number</span>
+            </button>
+
+            <button class="login-btn">
+                <span class="icon google">G</span>
+                <span>Continue with Google</span>
+            </button>
+
+            <button class="login-btn">
+                <span class="icon facebook">f</span>
+                <span>Continue with Facebook</span>
+            </button>
+
+            <button class="login-btn">
+                <span class="icon apple">●</span>
+                <span>Continue with Apple</span>
+            </button> -->
+
+
+
+
+            <!-- Phone -->
+            <button class="social-button">
+                <span class="button-icon phone-icon">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="6" y="2" width="12" height="20" rx="2" fill="none" stroke="white" stroke-width="2" />
+                        <circle cx="12" cy="18" r="1" fill="white" />
+                    </svg>
+                </span>
+                <span>Continue with phone number</span>
+            </button>
+
+            <!-- Google -->
+            <button class="social-button">
+               <span class="button-icon google-icon">G</span>
+               <span>Continue with Google</span>
+            </button>
+
+            <!-- Facebook -->
+            <button class="login-btn">
+                <span class="icon facebook">f</span>
+                <span>Continue with Facebook</span>
+            </button>
+
+            <!-- Apple -->
+            <button id="apple-icon" class="social-button">
+                <!-- <span class="button-icon apple-icon"></span> -->
+                <img src="apple-solid-white.svg" alt="">
+                <span>Continue with Apple</span>
+            </button>
+
+            <!-- signup -->
+            <div class="signup">
+                <span>Don't have an account?</span>
+                <a href="signup.html">Sign up</a>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
