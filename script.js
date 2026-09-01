@@ -3,7 +3,10 @@ console.log("lets write some javascript");
 let currentSong = new Audio();
 let songs;
 let currFolder;
-// let play = document.querySelector("#play");
+
+let play = document.querySelector("#play");
+let previous = document.querySelector("#previous");
+let next = document.querySelector("#next");
 
 //Time format changing
 function secondsToMinutesSeconds(seconds) {
@@ -89,8 +92,8 @@ async function displayAlbum() {
         const e = array[index];
     if (e.href.includes("/songs/")) {
       // console.log(e.href.split("/").slice(-1)[0]);
-      let folder = (e.href.split("/").slice(-1)[0]);
-      // let folder = e.href.split("/").filter(Boolean).pop();
+      // let folder = (e.href.split("/").slice(-1)[0]);
+      let folder = e.href.split("/").filter(Boolean).pop();
 
       //get metadata of the folder
       let a = await fetch(`/songs/${folder}/info.json`);
