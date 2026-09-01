@@ -22,7 +22,7 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getSongs(folder) {
   currFolder = folder;
-  let a = await fetch(`http://127.0.0.1:5500/${folder}/`);
+  let a = await fetch(`/${folder}/`);
   let response = await a.text();
   let div = document.createElement("div");
   div.innerHTML = response;
@@ -77,7 +77,7 @@ const playMusic = (track, pause = false) => {
 
 
 async function displayAlbum() {
-  let a = await fetch(`http://127.0.0.1:5500/songs/`);
+  let a = await fetch(`/songs/`);
   let response = await a.text();
   let div = document.createElement("div");
   div.innerHTML = response;
@@ -93,7 +93,7 @@ async function displayAlbum() {
       // let folder = e.href.split("/").filter(Boolean).pop();
 
       //get metadata of the folder
-      let a = await fetch(`http://127.0.0.1:5500/songs/${folder}/info.json`);
+      let a = await fetch(`/songs/${folder}/info.json`);
       let response = await a.json();
       //Adding dynamic albums
       cardContainer.innerHTML += `<div data-folder="${folder}" class="card">
@@ -120,7 +120,7 @@ async function displayAlbum() {
 
 async function main() {
   // get the list of all songs
-  await getSongs("songs/bg");
+  await getSongs("songs/arijit_singh");
   playMusic(songs[0], true);
 
 
