@@ -90,7 +90,7 @@ async function displayAlbum() {
   let array = Array.from(anchors)
     for (let index = 0; index < array.length; index++) {
         const e = array[index];
-    if (e.href.includes("/songs/")) {
+    if (e.href.includes("/songs/") && !e.href.includes(".htaccess")) { //.htaccess is a hidden file in the folder which we don't want to show as an album.
       // console.log(e.href.split("/").slice(-1)[0]);
       // let folder = (e.href.split("/").slice(-1)[0]);
       let folder = e.href.split("/").filter(Boolean).pop();
