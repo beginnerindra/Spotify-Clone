@@ -1,40 +1,49 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spotify - Web Player: Music for everyone</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
-    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="utility.css" />
-</head>
-
-<body>
-  <div class="container flex bg-black">
-    <!-- left section -->
-    <div class="left">
-      <div class="close">
-        <img class="invert" src="img/close.svg" alt="">
-      </div>
-      <div class="home bg-grey rounded m1 p1">
-        <div class="logo">
-          <img class="invert" width="110" src="img/logo.svg" alt="" srcset="">
+  <body>
+    <div class="container flex bg-black">
+      <!-- left section -->
+      <div class="left">
+        <div class="close">
+          <img class="invert" src="img/close.svg" alt="" />
         </div>
-        <ul>
-          <li><img class="invert" src="img/home.svg" alt="">Home</li>
-          <li><img class="invert" src="img/search.svg" alt="">Search</li>
-        </ul>
-      </div>
-      <div class="library bg-grey rounded m1 p1">
-        <div class="heading">
-          <i class="fa-solid fa-book-open"></i>Your Library
-        </div>
-        <div class="songList">
+        <div class="home bg-grey rounded m1 p1">
+          <div class="logo">
+            <img
+              class="invert"
+              width="110"
+              src="img/logo.svg"
+              alt=""
+              srcset=""
+            />
+          </div>
           <ul>
-            <!-- <li>
+            <li><img class="invert" src="img/home.svg" alt="" />Home</li>
+            <li><img class="invert" src="img/search.svg" alt="" />Search</li>
+          </ul>
+        </div>
+        <div class="library bg-grey rounded m1 p1">
+          <div class="heading">
+            <i class="fa-solid fa-book-open"></i>Your Library
+          </div>
+          <div class="songList">
+            <ul>
+              <!-- <li>
                 <img class="invert" src="img/music.svg" alt="">
                 <div class="info">
                   <div>Song Name</div>
@@ -45,90 +54,118 @@
                   <img class="invert" src="img/play.svg" alt="" srcset="">
                 </div>
               </li> -->
-          </ul>
-        </div>
-        <div class="footer">
-          <div>
-            <a href="https://www.spotify.com/in/legal/"><span>Legal</span></a>
+            </ul>
           </div>
-          <div>
-            <a href="https://www.spotify.com/in/privacy/"><span>Privacy Center</span></a>
+          <div class="footer">
+            <div>
+              <a href="https://www.spotify.com/in/legal/"><span>Legal</span></a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in/privacy/"
+                ><span>Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in/legal/privacy-policy/"
+                ><span>Privacy Policy</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in/legal/cookies-policy/"
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in/legal/privacy-policy/#s3"
+                ><span>About Ads</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in/accessibility/"
+                ><span>Accessibility</span></a
+              >
+            </div>
           </div>
-          <div>
-            <a href="https://www.spotify.com/in/legal/privacy-policy/"><span>Privacy Policy</span></a>
-          </div>
-          <div>
-            <a href="https://www.spotify.com/in/legal/cookies-policy/"><span>Cookies</span></a>
-          </div>
-          <div>
-            <a href="https://www.spotify.com/in/legal/privacy-policy/#s3"><span>About Ads</span></a>
-          </div>
-          <div>
-            <a href="https://www.spotify.com/in/accessibility/"><span>Accessibility</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- right section -->
-    <div class="right bg-grey rounded m1 p1">
-      <div class="header">
-        <div class="nav">
-          <div class="hamburgerContainer">
-            <img class="invert hamburger" src="img/hamburger.svg" alt="" srcset="">
-            <i class="fa-solid fa-angle-left"></i>
-            <i class="fa-solid fa-angle-right"></i>
-          </div>
-
-        </div>
-        <div class="buttons">
-          <button class="signupBtn" onclick="window.location.href='Singin_signup/signup.html'">Sign up</button>
-          <button class="loginBtn" onclick="window.location.href='Singin_signup/login.html'">Log in</button>
         </div>
       </div>
-      <div class="spotifyPlaylist">
-        <h1>Spotify Playlist</h1>
-        <!-- song cards -->
 
-        <div class="cardContainer">
-          <!-- <div data-folder="bg" class="card">
+      <!-- right section -->
+      <div class="right bg-grey rounded m1 p1">
+        <div class="header">
+          <div class="nav">
+            <div class="hamburgerContainer">
+              <img
+                class="invert hamburger"
+                src="img/hamburger.svg"
+                alt=""
+                srcset=""
+              />
+              <i class="fa-solid fa-angle-left"></i>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="buttons">
+            <button
+              class="signupBtn"
+              onclick="window.open('Singin_signup/signup.html', '_blank')"
+            >
+              Sign up
+            </button>
+
+            <button
+              class="loginBtn"
+              onclick="window.open('Singin_signup/login.html', '_blank')"
+            >
+              Log in
+            </button>
+          </div>
+        </div>
+        <div class="spotifyPlaylist">
+          <h1>Spotify Playlist</h1>
+          <!-- song cards -->
+
+          <div class="cardContainer">
+            <!-- <div data-folder="bg" class="card">
             <i class="fa-solid fa-circle-play play"></i>
             <img src="img/cover.jpg" alt="">
             <h2>Happy Hits!</h2>
             <p>hits to boost your mood and fill with happyness</p>
           </div> -->
-        </div>
-        <!-- playbar is here -->
-        <div class="playbar">
-          <div class="seekbar">
-            <div class="circle"></div>
           </div>
-          <div class="abovebar">
-            <div class="songinfo"></div>
-            <div class="songbuttons">
-              <img id="previous" class="invert" src="img/prevsong.svg" alt="" />
-              <img id="play" class="invert" src="img/play.svg" alt="" />
-              <img id="next" class="invert" src="img/nextsong.svg" alt="" />
+          <!-- playbar is here -->
+          <div class="playbar">
+            <div class="seekbar">
+              <div class="circle"></div>
             </div>
-
-            <!-- time song time and volume -->
-            <div class="timevol">
-              <div class="songtime"></div>
-              <div class="volume">
-                <img class="invert" width="25" src="img/volume.svg" alt="">
+            <div class="abovebar">
+              <div class="songinfo"></div>
+              <div class="songbuttons">
+                <img
+                  id="previous"
+                  class="invert"
+                  src="img/prevsong.svg"
+                  alt=""
+                />
+                <img id="play" class="invert" src="img/play.svg" alt="" />
+                <img id="next" class="invert" src="img/nextsong.svg" alt="" />
               </div>
-              <div class="range">
-                <input type="range" name="volume">
+
+              <!-- time song time and volume -->
+              <div class="timevol">
+                <div class="songtime"></div>
+                <div class="volume">
+                  <img class="invert" width="25" src="img/volume.svg" alt="" />
+                </div>
+                <div class="range">
+                  <input type="range" name="volume" />
+                </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
